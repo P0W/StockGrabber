@@ -1,3 +1,6 @@
+## Fetches stock live data from google finance
+## _P0W!
+
 from urllib.request import *
 import json
 import time
@@ -67,12 +70,13 @@ if __name__ == "__main__":
 ##                  'NSE:TATAMOTORS':0.0,
 ##                     }
 
-    AllStocks = {
-                  'BOM:509480' : 25.0, ## Berger Paints
-                  'BOM:500233' : 15.0, ##'NSE:KAJARIACER'
-                  'BOM:532540' : 6.0,  ##'NSE:TCS'         : 6.0,
-                  'BOM:532500' : 2.0,  ##'NSE:MARUTI'      : 2.0,
-                  'BOM:500096' : 30.0  ##'NSE:DABUR'       : 30.0,
+    AllStocks = { 
+               ## 'Exchange:Symbol' : Qty to buy
+                  'BOM:509480'      : 25.0, ## Berger Paints    : 25.0,
+                  'BOM:500233'      : 15.0, ##'NSE:KAJARIACER'  : 15.0,
+                  'BOM:532540'      : 6.0,  ##'NSE:TCS'         : 6.0 ,
+                  'BOM:532500'      : 2.0,  ##'NSE:MARUTI'      : 2.0 ,
+                  'BOM:500096'      : 30.0  ##'NSE:DABUR'       : 30.0,
                   
                 }
     
