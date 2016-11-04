@@ -1,13 +1,16 @@
 ## Fetches stock live data from google finance
 ## _P0W!
 
-from urllib.request import *
+try:
+    from urllib.request import *
+except:
+    from urllib import * 
 import json
 import time
 import winsound
 import copy
 
-class GoogleFinanceStockGrabber:
+class GoogleFinanceStockGrabber(object):
     def __init__(self):
         self.prefix = "http://finance.google.com/finance/info?client=ig&q="
 
