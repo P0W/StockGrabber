@@ -9,9 +9,6 @@ import copy
 
 class GoogleFinanceStockGrabber:
     def __init__(self):
-        proxy = ProxyHandler({'http': 'http://approxy.rockwellcollins.com:9090'})
-        opener = build_opener(proxy)
-        install_opener(opener)
         self.prefix = "http://finance.google.com/finance/info?client=ig&q="
 
     def get(self,symbol):
